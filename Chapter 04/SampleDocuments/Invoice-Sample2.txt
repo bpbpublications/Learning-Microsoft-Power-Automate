@@ -1,0 +1,3 @@
+Sample Invoice 2
+Vendor: Fabrikam
+Amount: 5000

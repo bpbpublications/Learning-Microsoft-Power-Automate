@@ -1,0 +1,3 @@
+Sample Invoice 1
+Vendor: Contoso
+Amount: 2500

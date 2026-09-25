@@ -1,0 +1,58 @@
+openapi: 3.0.1
+info:
+  title: CyberArk Credential Retrieval API
+  description: Sample OpenAPI definition for retrieving credentials from CyberArk CCP.
+  version: 1.0.0
+servers:
+  - url: https://ccp.example.com
+paths:
+  /AIMWebService/api/Accounts:
+    get:
+      summary: Retrieve Credential
+      description: Retrieves a credential from CyberArk Central Credential Provider.
+      operationId: RetrieveCredential
+      parameters:
+        - name: AppID
+          in: query
+          required: true
+          schema:
+            type: string
+          example: PowerAutomateApp
+        - name: Safe
+          in: query
+          required: true
+          schema:
+            type: string
+          example: ProdSafe
+        - name: Object
+          in: query
+          required: true
+          schema:
+            type: string
+          example: SQLAdmin
+      responses:
+        '200':
+          description: Credential retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  UserName:
+                    type: string
+                  Address:
+                    type: string
+                  Content:
+                    type: string
+        '401':
+          description: Unauthorized
+        '404':
+          description: Credential not found
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: x-api-key
+security:
+  - ApiKeyAuth: []

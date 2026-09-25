@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "UserName": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "string"
+    }
+  }
+}

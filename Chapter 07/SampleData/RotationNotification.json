@@ -1,0 +1,6 @@
+{
+  "eventType": "Microsoft.KeyVault.SecretNearExpiry",
+  "secretName": "SQLPassword",
+  "version": "v2",
+  "status": "ValidationPending"
+}

@@ -1,0 +1,5 @@
+{
+  "UserName": "sqladmin",
+  "Address": "SQLPROD01",
+  "Content": "REPLACE_WITH_SECURE_SECRET"
+}

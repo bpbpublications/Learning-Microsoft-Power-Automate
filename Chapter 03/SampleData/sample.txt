@@ -1,0 +1,2 @@
+Welcome to Power Automate Desktop.
+This sample file is used in Chapter 3 demonstrations.
